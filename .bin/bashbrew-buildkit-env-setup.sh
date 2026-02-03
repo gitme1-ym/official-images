@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+python -m venv .venv
+source .venv/bin/activate#!/usr/bin/env bash
 
 # this file is intended to be sourced before invocations of "bashbrew build" which might invoke "docker buildx" / BuildKit ("Builder: buildkit")
 
