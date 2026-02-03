@@ -2,7 +2,8 @@
 set -Eeuo pipefail
 
 # given a list of image references, returns an appropriate list of "ref=docker-image://foo@sha256:xxx" for the current architecture
-
+python -m venv .venv
+source .venv/bin/activate
 dir="$(dirname "$BASH_SOURCE")"
 
 [ -n "$BASHBREW_ARCH" ]
